@@ -30,11 +30,4 @@
 		<welcome-file>index.xhtml</welcome-file>
 	</welcome-file-list>
 
-	<!-- <context-param>
-	<param-name>javax.faces.application.CONFIG_FILES</param-name>
-	<param-value>
-            /META-INF/faces-config.xml
-    </param-value>
-	</context-param> -->
-
 </web-app>

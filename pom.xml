@@ -122,10 +122,10 @@
 
 				<configuration>
 					<scanintervalseconds>2</scanintervalseconds>
-					<!-- <classesDirectory>
+					<classesDirectory>
 						${basedir}/src/main/webapp/WEB-INF/classes/
-					</classesDirectory> -->
-
+					</classesDirectory>
+					
 					<scanTargets>
 						<scanTarget>src/main/java</scanTarget>
 					</scanTargets>

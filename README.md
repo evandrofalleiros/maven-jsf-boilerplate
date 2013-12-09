@@ -21,13 +21,13 @@ Para clonar o boilerplate, utilize o seguinte comando Git:
 O projeto já está pronto para uso. Para o deploy da aplicação, utilize o comando Maven:
 
 <code>
-  mvn -D jetty.port=9999 jetty:run
+  mvn compile -D jetty.port=9999 jetty:run
 </code>
 
 Com isso, o projeto é embutido no Jetty, na porta 9999, e pode ser acessado pela URL <em>http://localhost:9999/</em>. A porta 8080 é padrão quando a diretiva <em>jetty.port=9999</em> não é passada para o <em>mvn</em>:
 
 <code>
-  mvn jetty:run
+  mvn compile jetty:run
 </code>
 
 No Eclipse, é possível dar o deploy utilizando o plugin <a href="http://www.eclipse.org/m2e/">Maven m2e</a>. Para tal, acesse o menu <strong>Run -> Run Configurations ...</strong> e crie uma nova configuração <strong>Maven Build</strong>. Na aba <strong>Main</strong>, coloque o valor <strong><em>jetty:run</em></strong> no campo <strong>Goals</strong>. Posteriormente, selecione o botão <strong>Run</strong> para executar o deploy.

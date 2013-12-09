@@ -8,6 +8,7 @@
 	<name>Projeto</name>
 	<description>Projeto Base</description>
 
+	
 
 	<repositories>
 		<repository>
@@ -114,6 +115,8 @@
 	</dependencies>
 
 	<build>
+		<outputDirectory>${basedir}/src/main/webapp/WEB-INF/classes/</outputDirectory>
+		
 		<plugins>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
@@ -125,9 +128,9 @@
 					<classesDirectory>
 						${basedir}/src/main/webapp/WEB-INF/classes/
 					</classesDirectory>
-					
+
 					<scanTargets>
-						<scanTarget>src/main/java</scanTarget>
+						<scanTarget>${basedir}/src/main/java</scanTarget>
 					</scanTargets>
 				</configuration>
 			</plugin>

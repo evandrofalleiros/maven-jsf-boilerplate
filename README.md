@@ -18,7 +18,13 @@ Para clonar o boilerplate, utilize o seguinte comando Git:
   git clone https://github.com/evandrofalleiros/maven-jsf-boilerplate.git
 </code>
 
-O projeto já está pronto para uso. Para o deploy da aplicação, utilize o comando Maven:
+Após clonarmos o boilerplate, devemos instalar as dependências através do Maven:
+
+<code>
+  mvn install
+</code>
+
+Agora, com todas as dependências instaladas, o projeto já está pronto para uso. Para o deploy da aplicação, utilize o comando Maven:
 
 <code>
   mvn compile -D jetty.port=9999 jetty:run
